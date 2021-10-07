@@ -4,11 +4,12 @@ import { writeFileSync, mkdirSync, existsSync } from "fs";
 import { join } from 'path';
 export class PageSpeedInsights {
 
-  private key = '';
+  private key = ''; // Need to add access key, [optional] - if want to use it for normal hits [2-3] hits
   private currentDateTime = new Date().toISOString();
   private reportFolder = join(process.cwd(), `Reports/${this.currentDateTime}`);
 
   async getPageSpeedResult(urlData: string) {
+    //If not adding accesskey remove &key=${this.key} from the url
     const response = request('GET', `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${urlData}&key=${this.key}&strategy=mobile&category=performance`);
     const parsedData = response.getBody('utf8');
     return parsedData;

@@ -2,7 +2,7 @@
 ### PageSpeedInsights Wrapper
 
 #### Data Source 
- * Inside ./resources/data.json , You can kept your URL and page name that you want to give.
+ * Inside ./resources/data.json , You can keep your URL and page name that you want to give.
 
 #### How to run 
 * open your terminal at root directory and hit - ``` npm run start ```
