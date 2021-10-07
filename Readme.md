@@ -5,7 +5,8 @@
  * Inside ./resources/data.json , You can keep your URL and page name that you want to give.
 
 #### How to run 
-* open your terminal at root directory and hit - ``` npm run start ```
+* open your terminal at root directory and hit - ``` npm i```
+* Once it installs hit ``` npm run start ```
 * wait till execution completed.
 * Now Go to ./Reports/{latest date and time}
 * Refer you report corresponding to each URL
